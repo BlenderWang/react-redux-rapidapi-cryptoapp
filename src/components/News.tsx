@@ -47,7 +47,7 @@ const News = ({ simplified }: { simplified?: boolean }) => {
           </Col>
         )}
 
-        {cryptoNews?.data?.map((news: any, i: number) => (
+        {cryptoNews?.data?.map((news: INewsProps, i: number) => (
           <Col xs={24} sm={12} lg={8} key={i}>
             <Card hoverable className="news-card">
               <a href={news.url} target="_blank" rel="noreferrer">
